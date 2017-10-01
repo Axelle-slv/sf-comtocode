@@ -1,0 +1,45 @@
+/* Header */
+.header {
+    background: url(/assets/images/contact-us-header.jpg) no-repeat fixed;
+    background-size: cover;
+    height: 500px;
+    background-position: bottom;
+}
+
+.header h1,
+.header h2 {
+    color: #ffffff;
+}
+
+.header h1 {
+    margin-top: 200px;
+}
+
+.header h2 {
+    text-align: center;
+}
+
+/* Contact form */
+.contact-form input {
+    border:none;
+    border-bottom: 1px solid #419ea6;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius: 0;
+}
+
+.contact-form input:focus {
+    border-bottom: 1px solid #8a77a5;
+}
+
+.contact-form label {
+    margin: 15px 0 5px 0;
+}
+
+.contact-form textarea {
+    border: 1px solid #419ea6;
+}
+
+.contact-form textarea:focus {
+    border: 1px solid #8a77a5;
+}

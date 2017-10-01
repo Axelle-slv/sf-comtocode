@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ledger', serif;
+}
+
+h1, .h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 400;
+    margin: 0 auto 35px auto;
+}
+
+h1::after {
+    content: " ";
+    height: 2px;
+    width: 35px;
+    background: #ffffff;
+    display: block;
+    margin: 15px auto 0 auto;
+}
+
+h2, .h2 {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.wrap {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.message {
+    min-height: 200px;
+}
+
+/* Forms */
+input::placeholder,
+textarea::placeholder {
+    font-size: 0.8em;
+}
+
+/* Buttons */
+.btn-green {
+    background: #419ea6;
+    color: #ffffff;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    margin: 25px auto 0 auto;
+    display: block;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    background: #337f86;
+}
