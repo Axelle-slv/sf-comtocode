@@ -4,13 +4,19 @@ body {
     font-family: 'Ledger', serif;
 }
 
-h1, .h1 {
+h1 {
     font-family: 'Dancing Script', cursive;
     text-align: center;
     font-size: 4em;
     font-weight: 400;
     margin: 0 auto 35px auto;
 }
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
 
 h1::after {
     content: " ";
@@ -21,9 +27,15 @@ h1::after {
     margin: 15px auto 0 auto;
 }
 
-h2, .h2 {
+h2 {
     font-size: 1.3em;
     font-weight: 400;
+}
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.1em;
+        line-height: 24px;
+    }
 }
 
 .wrap {
