@@ -37,11 +37,17 @@ class ContactType extends AbstractType
             ->add('email', EmailType::class, [
                 'label' => 'Adresse e-mail',
                 'required' => true,
+                'attr' => array(
+                    'placeholder' => 'exemple@exemple.fr'
+                ),
                 'constraints' => new NotBlank(),
             ])
             ->add('phoneNumber', TextType::class, [
                 'label' => 'Numéro de téléphone',
                 'required' => true,
+                'attr' => array(
+                    'placeholder' => '0607080910'
+                ),
                 'constraints' => array(
                     new NotBlank(),
                     new Length(array('max' => 10)),
@@ -50,6 +56,10 @@ class ContactType extends AbstractType
             ->add('message', TextAreaType::class, [
                 'label' => 'Message',
                 'required' => true,
+                'attr' => array(
+                    'placeholder' => 'Exprimez-vous ici !'
+                ),
+
                 'constraints' => new NotBlank(),
             ])
             ->add('send', SubmitType::class, array(
