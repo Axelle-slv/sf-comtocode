@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nous contacter | Com to code {% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/contact.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/validation.css') }}">
+{% endblock %}
+
+{% block body %}
+    <section class="container-fluid header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h1>Message envoyé !</h1>
+                    <h2>Votre message nous a été transmis ! Nous vous répondrons dès que nous en aurons pris connaissance. A bientot !</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-3">
+                    <a href="{{ path('fos_user_security_logout') }}" class="btn btn-green">Me déconnecter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

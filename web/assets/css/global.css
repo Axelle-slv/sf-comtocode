@@ -67,4 +67,5 @@ textarea::placeholder {
 .btn-green:hover,
 .btn-green:focus {
     background: #337f86;
+    color: #ffffff;
 }
