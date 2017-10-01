@@ -1,0 +1,15 @@
+{# Contact Form #}
+
+{{ form_start(contactForm, {'attr': {'id': 'contact_form'}}) }}
+{{ form_label(contactForm.lastName) }}
+{{ form_widget(contactForm.lastName) }}
+{{ form_label(contactForm.firstName) }}
+{{ form_widget(contactForm.firstName) }}
+{{ form_label(contactForm.email) }}
+{{ form_widget(contactForm.email) }}
+{{ form_label(contactForm.phoneNumber) }}
+{{ form_widget(contactForm.phoneNumber) }}
+{{ form_label(contactForm.message) }}
+{{ form_widget(contactForm.message) }}
+{{ form_widget(contactForm.send, {'attr': {'class': 'btn btn-green btn-form'}}) }}
+{{ form_end(contactForm) }}
