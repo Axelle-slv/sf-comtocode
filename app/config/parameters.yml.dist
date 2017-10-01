@@ -20,3 +20,7 @@ parameters:
 
     #Fill in the email of the person that will receive the email from the contact form
     mail_contact: ~
+
+    #The name and email used in app email notifications
+    notification_name: ~
+    notification_email: ~

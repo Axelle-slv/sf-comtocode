@@ -1,11 +1,11 @@
 app_homepage:
     path:     /
-    defaults: { _controller: AppBundle:Default:login }
+    defaults: { _controller: AppBundle:Default:index }
 
 app_contact:
     path:     /contact
     defaults: { _controller: AppBundle:Default:contact }
 
 app_validation:
-    path:     /contact
-    defaults: { _controller: AppBundle:Default:contact }
+    path:     /contact/message-envoye
+    defaults: { _controller: AppBundle:Default:validation }

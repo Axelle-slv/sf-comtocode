@@ -8,10 +8,10 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-    public function loginAction()
-    {
-        return $this->render('AppBundle:Default:index.html.twig');
+    public function indexAction() {
+        return $this->redirectToRoute('fos_user_security_login');
     }
+
 
     public function contactAction(Request $request)
     {
@@ -34,5 +34,10 @@ class DefaultController extends Controller
         return $this->render('AppBundle:Default:contact.html.twig', [
             'contactForm' => $contactForm->createView(),
         ]);
+    }
+
+    public function validationAction()
+    {
+        return $this->render('AppBundle:Default:validation.html.twig');
     }
 }
