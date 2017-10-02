@@ -8,11 +8,17 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
+    /**
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     */
     public function indexAction() {
         return $this->redirectToRoute('fos_user_security_login');
     }
 
-
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     */
     public function contactAction(Request $request)
     {
         $contactForm =  $this->createForm(ContactType::class);
@@ -36,6 +42,9 @@ class DefaultController extends Controller
         ]);
     }
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function validationAction()
     {
         return $this->render('AppBundle:Default:validation.html.twig');
